@@ -1,0 +1,194 @@
+
+body {
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+.navbar {
+    background-color: #007bff; 
+    padding: 0.8rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e9ecef; 
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.dropbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.dropbox {
+    border: 2px dashed #0056b3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dropbox:hover {
+    background-color: #f0f0f0;
+}
+
+.dropbox-input {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+}
+
+/* Table */
+table {
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+}
+
+.dropbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropbox {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f8f9fa;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.dropbox:hover {
+    background-color: #e9ecef; 
+    border-color: #0056b3; 
+}
+
+.dropbox-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057; 
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.dropbox-input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #6c757d; 
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #f8f9fa; 
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; 
+    border-top: 1px solid #dee2e6; 
+}
+
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #343a40;
+    text-decoration: underline;
+}
+
+.container.text-center {
+    text-align: center;
+}
+

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Secret Santa Assignment";
+}
+
+<h2 class="text-center mb-4">Secret Santa Game</h2>
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadFiles" class="dropbox-container">
+
+    <div class="dropbox mb-3" id="employeeFileDropbox">
+        <label for="employeeFile" class="form-label dropbox-label">Click here to upload Employee CSV File</label>
+        <input type="file" name="employeeFile" id="employeeFile" class="dropbox-input" onchange="showFileName('employeeFile', 'employeeFileDropbox')" />
+        <p class="file-name text-muted">No file selected</p>
+    </div>
+
+    <div class="dropbox mb-3" id="previousAssignmentsFileDropbox">
+        <label for="previousAssignmentsFile" class="form-label dropbox-label">Click here to upload Previous Year’s Assignments CSV File</label>
+        <input type="file" name="previousAssignmentsFile" id="previousAssignmentsFile" class="dropbox-input" onchange="showFileName('previousAssignmentsFile', 'previousAssignmentsFileDropbox')" />
+        <p class="file-name text-muted">No file selected</p>
+    </div>
+
+    <div class="text-center w-25">
+        <button type="submit" class="btn btn-primary mt-3 w-100">Submit</button>
+    </div>
+</form>
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <p class="text-danger text-center">@ViewBag.ErrorMessage</p>
+}
+

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "72z0JYuhcRU=",
+  "dgSpecHash": "QjU03kqHovY=",
   "success": true,
   "projectFilePath": "D:\\Projects\\Secret-Santa-Game\\Secret-Santa-Game.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\91766\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

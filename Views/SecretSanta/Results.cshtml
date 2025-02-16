@@ -1,0 +1,37 @@
+@model List<Secret_Santa_Game.Models.Employee>
+
+@{
+    ViewData["Title"] = "Secret Santa Results";
+}
+
+<h2 class="text-center mb-4">Secret Santa Assignment Results</h2>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover shadow-sm">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Employee Email</th>
+                            <th>Secret Child Name</th>
+                            <th>Secret Child Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var employee in Model)
+                    {
+                        <tr>
+                            <td>@employee.Employee_Name</td>
+                            <td>@employee.Employee_EmailID</td>
+                            <td>@employee.SecretChild?.Employee_Name</td>
+                            <td>@employee.SecretChild?.Employee_EmailID</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
